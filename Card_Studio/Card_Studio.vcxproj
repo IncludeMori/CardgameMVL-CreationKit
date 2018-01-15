@@ -72,6 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL2_Mixxer_Audio\SDL2_mixer-2.0.1\include;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL2_2.04\SDL2-2.0.4\include;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL_trueTypeFonts\include;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\lua-5.3.3_Win32_dllw4_lib\include;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\boost_1_64_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL2_Mixxer_Audio\SDL2_mixer-2.0.1\lib\x86;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\lua-5.3.3_Win32_dllw4_lib;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL_trueTypeFonts\lib\x86;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\SDL2_2.04\SDL2-2.0.4\lib\x86;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\boost_1_64_0\stage\lib;C:\Users\MoritzV\Source\Repos\Card_Studio\Card_Studio\lib\boost_1_64_0\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -84,14 +86,14 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;lua53.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,6 +141,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActiveFields.cpp" />
+    <ClCompile Include="CardInfo.cpp" />
+    <ClCompile Include="CardStudio.cpp" />
+    <ClCompile Include="DropDownMenu.cpp" />
+    <ClCompile Include="DropField.cpp" />
+    <ClCompile Include="DynInputField.cpp" />
+    <ClCompile Include="EffectOptions.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="DefaultTexture.cpp" />
+    <ClCompile Include="display_text.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="FileList.cpp" />
+    <ClCompile Include="FPS_Timer.cpp" />
+    <ClCompile Include="GetFiles.cpp" />
+    <ClCompile Include="InputField.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="OpenFile.cpp" />
+    <ClCompile Include="SaveFile.cpp" />
+    <ClCompile Include="SDL_init.cpp" />
+    <ClCompile Include="StaticTextures.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TTF_Text.cpp" />
+    <ClCompile Include="ValidEntry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveFields.hpp" />
+    <ClInclude Include="CardInfo.hpp" />
+    <ClInclude Include="CardStudio.hpp" />
+    <ClInclude Include="DropDownMenu.hpp" />
+    <ClInclude Include="DropField.hpp" />
+    <ClInclude Include="DynInputField.hpp" />
+    <ClInclude Include="eCardData.hpp" />
+    <ClInclude Include="EffectOptions.hpp" />
+    <ClInclude Include="EventHandler.hpp" />
+    <ClInclude Include="DefaultTexture.hpp" />
+    <ClInclude Include="display_text.hpp" />
+    <ClInclude Include="draw.hpp" />
+    <ClInclude Include="FileList.hpp" />
+    <ClInclude Include="FPS_Timer.hpp" />
+    <ClInclude Include="GetFiles.hpp" />
+    <ClInclude Include="gFont.hpp" />
+    <ClInclude Include="gMouse.hpp" />
+    <ClInclude Include="gQuit.hpp" />
+    <ClInclude Include="InputField.hpp" />
+    <ClInclude Include="InputHandler.hpp" />
+    <ClInclude Include="Mouse.hpp" />
+    <ClInclude Include="OpenFile.hpp" />
+    <ClInclude Include="SaveFile.hpp" />
+    <ClInclude Include="SDL_init.hpp" />
+    <ClInclude Include="StaticOptions.hpp" />
+    <ClInclude Include="StaticTextures.hpp" />
+    <ClInclude Include="Timer.hpp" />
+    <ClInclude Include="TTF_Text.hpp" />
+    <ClInclude Include="ValidEntry.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

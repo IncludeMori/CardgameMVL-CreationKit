@@ -1,17 +1,155 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="dev">
+      <UniqueIdentifier>{657b9033-653d-46c7-a862-2b1db4e2f975}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="src">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src\CardData">
+      <UniqueIdentifier>{ee10c9d9-d2f5-4d45-9f6c-02eba2ddf2c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\EventHandler">
+      <UniqueIdentifier>{830fae35-8e80-44df-88dc-b42b4b086d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\FileHandler">
+      <UniqueIdentifier>{58c7f978-1b52-4945-976e-5feaa9fbf92b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL_init.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS_Timer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>dev</Filter>
+    </ClCompile>
+    <ClCompile Include="CardStudio.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticTextures.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CardInfo.cpp">
+      <Filter>src\CardData</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultTexture.cpp">
+      <Filter>src\CardData</Filter>
+    </ClCompile>
+    <ClCompile Include="display_text.cpp">
+      <Filter>src\CardData</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>src\EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="FileList.cpp">
+      <Filter>src\FileHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFiles.cpp">
+      <Filter>src\FileHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFile.cpp">
+      <Filter>src\FileHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveFile.cpp">
+      <Filter>src\FileHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="TTF_Text.cpp">
+      <Filter>src\CardData</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="DropDownMenu.cpp" />
+    <ClCompile Include="EffectOptions.cpp" />
+    <ClCompile Include="ActiveFields.cpp" />
+    <ClCompile Include="InputField.cpp" />
+    <ClCompile Include="DropField.cpp" />
+    <ClCompile Include="DynInputField.cpp" />
+    <ClCompile Include="ValidEntry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL_init.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS_Timer.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.hpp">
+      <Filter>dev</Filter>
+    </ClInclude>
+    <ClInclude Include="gFont.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="gQuit.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="CardStudio.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticTextures.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="gMouse.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="CardInfo.hpp">
+      <Filter>src\CardData</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultTexture.hpp">
+      <Filter>src\CardData</Filter>
+    </ClInclude>
+    <ClInclude Include="display_text.hpp">
+      <Filter>src\CardData</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.hpp">
+      <Filter>src\EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="FileList.hpp">
+      <Filter>src\FileHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="GetFiles.hpp">
+      <Filter>src\FileHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFile.hpp">
+      <Filter>src\FileHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveFile.hpp">
+      <Filter>src\FileHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="TTF_Text.hpp">
+      <Filter>src\CardData</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.hpp" />
+    <ClInclude Include="eCardData.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="DropDownMenu.hpp" />
+    <ClInclude Include="StaticOptions.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectOptions.hpp" />
+    <ClInclude Include="ActiveFields.hpp" />
+    <ClInclude Include="InputField.hpp" />
+    <ClInclude Include="DropField.hpp" />
+    <ClInclude Include="DynInputField.hpp" />
+    <ClInclude Include="ValidEntry.hpp" />
   </ItemGroup>
 </Project>
