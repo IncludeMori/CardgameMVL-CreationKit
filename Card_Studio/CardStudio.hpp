@@ -6,9 +6,5 @@ public:
 	~CardStudio();
 
 	void loop();
-private:
-
-	void update();
-	void render();
 };
 
