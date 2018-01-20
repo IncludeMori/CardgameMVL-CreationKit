@@ -161,6 +161,7 @@
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="OpenFile.cpp" />
     <ClCompile Include="SaveFile.cpp" />
+    <ClCompile Include="scroll.cpp" />
     <ClCompile Include="SDL_init.cpp" />
     <ClCompile Include="search.cpp" />
     <ClCompile Include="StaticTextures.cpp" />
@@ -192,6 +193,7 @@
     <ClInclude Include="Mouse.hpp" />
     <ClInclude Include="OpenFile.hpp" />
     <ClInclude Include="SaveFile.hpp" />
+    <ClInclude Include="scroll.hpp" />
     <ClInclude Include="SDL_init.hpp" />
     <ClInclude Include="search.hpp" />
     <ClInclude Include="StaticOptions.hpp" />

@@ -79,6 +79,7 @@
     <ClCompile Include="DynInputField.cpp" />
     <ClCompile Include="ValidEntry.cpp" />
     <ClCompile Include="search.cpp" />
+    <ClCompile Include="scroll.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SDL_init.hpp">
@@ -153,5 +154,6 @@
     <ClInclude Include="DynInputField.hpp" />
     <ClInclude Include="ValidEntry.hpp" />
     <ClInclude Include="search.hpp" />
+    <ClInclude Include="scroll.hpp" />
   </ItemGroup>
 </Project>
