@@ -162,6 +162,7 @@
     <ClCompile Include="OpenFile.cpp" />
     <ClCompile Include="SaveFile.cpp" />
     <ClCompile Include="SDL_init.cpp" />
+    <ClCompile Include="search.cpp" />
     <ClCompile Include="StaticTextures.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="TTF_Text.cpp" />
@@ -192,6 +193,7 @@
     <ClInclude Include="OpenFile.hpp" />
     <ClInclude Include="SaveFile.hpp" />
     <ClInclude Include="SDL_init.hpp" />
+    <ClInclude Include="search.hpp" />
     <ClInclude Include="StaticOptions.hpp" />
     <ClInclude Include="StaticTextures.hpp" />
     <ClInclude Include="Timer.hpp" />

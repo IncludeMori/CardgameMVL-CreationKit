@@ -78,6 +78,7 @@
     <ClCompile Include="DropField.cpp" />
     <ClCompile Include="DynInputField.cpp" />
     <ClCompile Include="ValidEntry.cpp" />
+    <ClCompile Include="search.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SDL_init.hpp">
@@ -151,5 +152,6 @@
     <ClInclude Include="DropField.hpp" />
     <ClInclude Include="DynInputField.hpp" />
     <ClInclude Include="ValidEntry.hpp" />
+    <ClInclude Include="search.hpp" />
   </ItemGroup>
 </Project>

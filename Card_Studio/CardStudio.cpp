@@ -26,24 +26,18 @@ CardStudio::~CardStudio()
 
 void CardStudio::loop()
 {
-	std::string p = "C:/Users/MoritzV/Desktop/Card_Game/CardGame_Walnut/Cards_Lua/";
+	std::string p = "Data/Cards/Cards_Lua/";
 	GetFiles AllFiles;
 	std::vector<std::string> Filename = AllFiles.getFiles(p);
-	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
-	cout << "1" << endl;
 	
 	draw drawx;
 	SDL_Event e;
 	Fps_Timer Timer;
 	StaticTextures x;
-	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
-	cout << "2" << endl;
 	FileList list(p,Filename);
-	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
-	cout << "3" << endl;
+	
 	Text text;
-	cout << "--------------------------------------------------------------------------------------------------------------------" << endl;
-	cout << "4" << endl;
+
 	//mainloop
 	while (!gQuit)
 	{

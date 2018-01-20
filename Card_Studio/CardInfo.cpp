@@ -47,8 +47,8 @@ CardInfo::CardInfo(const std::string &path, std::string &name)
 
 	}
 
-	std::string main_path = "C:/Users/MoritzV/Desktop/Card_Game/CardGame_Walnut/";
-	mCardTexture.loadFromFile(main_path+mPath);
+	std::string main_path = "Data/Cards_Png/Cards_Png/";
+	mCardTexture.loadFromFile(main_path+Name+".png");
 	mImagePath = main_path + mPath;
 
 	/*

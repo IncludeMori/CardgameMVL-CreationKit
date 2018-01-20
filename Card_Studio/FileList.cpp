@@ -52,10 +52,8 @@ FileList::FileList(const std::string &path, std::vector<std::string> &list)
 	//Load & Init Files
 	for (int i = 0; i < mFileName.size(); i++)
 	{
-		cout << "++++--------------------------------------------------------------------------------------------------------------------" << endl;
-		cout << i << endl;
-		CardData.push_back(std::unique_ptr<CardInfo>(new CardInfo(path,mFileName[i])));
-		CardData[i]->setPos(x,y+ i * 50);
+		CardData.push_back(std::unique_ptr<CardInfo>(new CardInfo(path, mFileName[i])));
+		CardData[i]->setPos(x, y + i * 50);
 	}
 }
 
