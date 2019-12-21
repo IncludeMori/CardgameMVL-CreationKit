@@ -1,2 +1,3 @@
 # Cardgame_W-Creation-Kit
-Written in C++, the Cardgame_W-Creation Kit is using an graphic interface to create LUA files for new cards for my other projekt-> Cardgame_W
+
+This "Creation-Kit" is used to create cards for my other project @ https://github.com/IncludeMori/Cardgame_W
