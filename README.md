@@ -2,4 +2,4 @@
 
 This "Creation-Kit" is used to create cards for my other project @ https://github.com/IncludeMori/Cardgame_W  
 
-Currently not updated for the last version
+Currently not updated for the latest version.
